@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Web", "JProject.Web\JProject.Web.csproj", "{986CC74F-F400-4BD5-90F4-995973BBF485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Web.Tests", "JProject.Web.Tests\JProject.Web.Tests.csproj", "{40EE483F-1DD5-41BB-97CE-4447150C9081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Web2", "JProject.Web2\JProject.Web2.csproj", "{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{986CC74F-F400-4BD5-90F4-995973BBF485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986CC74F-F400-4BD5-90F4-995973BBF485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986CC74F-F400-4BD5-90F4-995973BBF485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986CC74F-F400-4BD5-90F4-995973BBF485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EE483F-1DD5-41BB-97CE-4447150C9081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EE483F-1DD5-41BB-97CE-4447150C9081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EE483F-1DD5-41BB-97CE-4447150C9081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EE483F-1DD5-41BB-97CE-4447150C9081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
