@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="JProject.Services.ListsSvc" CodeBehind="ListsSvc.svc.cs" %>
