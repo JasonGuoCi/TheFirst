@@ -34,7 +34,7 @@ namespace JProject.Mvc.Controllers
             //};
 
             TableSvc.ListSvcClient tableSvc = new TableSvc.ListSvcClient();
-            //tableSvc.Endpoint.Address = new EndpointAddress(new Uri("http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc"));
+            tableSvc.Endpoint.Address = new EndpointAddress(new Uri("http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc"));
             List<object> data = tableSvc.getJsonMsg().ToList();
 
             var total = data.Count();

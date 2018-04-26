@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="c3f1082c-1377-4378-b534-57038fbf4b32" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="c12482ae-423f-4c6e-971e-2ddf5e6d672e" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="4699c057-f742-4098-8eed-e8b74e0e436e" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="JProject.ServicesTest.Utilities1.xsd" MetadataType="Schema" ID="d99c3628-e4fb-4f99-a136-31b3744944c1" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="200963b4-a884-4ba1-bcb2-2c04ede9e161" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="8d922e6e-c5e0-495c-a6bc-35585ca4662c" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="f8906666-6e7d-4f99-af4f-4d356de08a39" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="0cae8d85-d8bd-4ab7-bee7-1bc070a22d30" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="JProject.ServicesTest.Utilities1.xsd" MetadataType="Schema" ID="f638136b-246c-4781-a6b4-fa10e495a0b0" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="83ee3c52-c377-4e7e-864b-391b33e1d683" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -91,7 +91,7 @@
   </wsdl:binding>
   <wsdl:service name="ListSvc">
     <wsdl:port name="BasicHttpBinding_IListSvc" binding="tns:BasicHttpBinding_IListSvc">
-      <soap:address location="http://slvcnnot041.cn.slv.int:520/JProject.ServicesTest.ListSvc.svc" />
+      <soap:address location="http://j:520/JProject.ServicesTest.ListSvc.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
