@@ -28,5 +28,9 @@ namespace JProject.ServicesTest
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
         JsonResult getJsonMsg2();
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        List<object> getJsonMsg();
     }
 }
