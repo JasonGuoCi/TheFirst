@@ -157,15 +157,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\TableSvc\Arrays.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\TableSvc\configuration91.svcinfo" />
     <None Include="Connected Services\TableSvc\configuration.svcinfo" />
-    <Content Include="Connected Services\TableSvc\JProject.Mvc.TableSvc.JsonResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\TableSvc\JProject.ServicesTest.Utilities1.xsd">
+    <None Include="Connected Services\TableSvc\JProject.ServicesTest.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TableSvc\JProject.ServicesTest.Utilities.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\TableSvc\Reference.svcmap">
@@ -182,19 +179,23 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ArbetTable.js" />
+    <Content Include="Scripts\bootstrap-table-export.js" />
     <Content Include="Scripts\bootstrap-table.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Connected Services\TableSvc\service1.wsdl" />
-    <None Include="Connected Services\TableSvc\service2.xsd">
+    <None Include="Connected Services\TableSvc\service.wsdl" />
+    <None Include="Connected Services\TableSvc\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\TableSvc\service21.xsd">
+    <None Include="Connected Services\TableSvc\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Properties\DataSources\JProject.ServicesTest.Entities.TicketEntity.datasource" />
+    <Content Include="Properties\DataSources\JProject.ServicesTest.Utilities.JsonResult.datasource" />
+    <Content Include="Properties\DataSources\JProject.ServicesTest.Utilities.NavigationEntity.datasource" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -296,6 +297,8 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\TableExport.js" />
+    <Content Include="Scripts\xlsx.core.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -334,6 +337,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\TableSvc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JProject.ServicesTest\JProject.ServicesTest.csproj">
+      <Project>{C4902383-889A-4E58-94E9-C9A45B598A2F}</Project>
+      <Name>JProject.ServicesTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

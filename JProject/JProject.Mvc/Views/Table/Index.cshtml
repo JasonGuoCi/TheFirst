@@ -10,6 +10,10 @@
 <script src="~/Scripts/bootstrap.js"></script>
 <script src="~/Scripts/bootstrap-table.js"></script>
 <script src="~/Scripts/locale/bootstrap-table-zh-CN.js"></script>
+<script src="~/Scripts/xlsx.core.min.js"></script>
+<script src="~/Scripts/TableExport.js"></script>
+<script src="~/Scripts/bootstrap-table-export.js"></script>
+
 <script src="~/Scripts/ArbetTable.js"></script>
 
 
@@ -18,3 +22,7 @@
 
 <table id="ArbetTable"></table>
 
+<table id="JTable"></table>
+
+
+@*<button type="button" style="margin-left:50px" id="btn_download" class="btn btn-primary" onClick="$('#JTable').tableExport({ type: 'xlsx', escape: 'false' })">数据导出</button>*@ 

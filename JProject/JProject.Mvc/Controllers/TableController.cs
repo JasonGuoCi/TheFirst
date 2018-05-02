@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JProject.Mvc.TableSvc;
+using JProject.ServicesTest.Entities;
+using JProject.ServicesTest.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -34,12 +37,23 @@ namespace JProject.Mvc.Controllers
             //};
 
             TableSvc.ListSvcClient tableSvc = new TableSvc.ListSvcClient();
-            tableSvc.Endpoint.Address = new EndpointAddress(new Uri("http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc"));
-            List<object> data = tableSvc.getJsonMsg().ToList();
+            List<NavigationEntity> data = tableSvc.getJsonMsg().ToList();
 
             var total = data.Count();
             var rows = data.Skip(offset).Take(limit).ToList();
             return Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult GetSPTicketItem(int limit, int offset)
+        {
+            ListSvcClient svc = new ListSvcClient();
+            List<TicketEntity> tickets = svc.GetTicket().ToList();
+
+            var total = tickets.Count();
+            var rows = tickets.Skip(offset).Take(limit).ToList();
+            return Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
+
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.WebApp", "JProject.WebApp\JProject.WebApp.csproj", "{56F640DB-AA8A-4159-8BFD-5AED6E45712C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Mvc", "JProject.Mvc\JProject.Mvc.csproj", "{D9D062F7-D995-4082-BBA6-4E47AD973FEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Services", "JProject.Services\JProject.Services.csproj", "{AB0B7045-22BF-423B-B5CD-0F63FB047A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Demo", "JProject.Demo\JProject.Demo.csproj", "{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AB0B7045-22BF-423B-B5CD-0F63FB047A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0B7045-22BF-423B-B5CD-0F63FB047A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0B7045-22BF-423B-B5CD-0F63FB047A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

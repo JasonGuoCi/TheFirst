@@ -5,7 +5,7 @@
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/JProject.ServicesTest.Utilities" />
-      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/JProject.ServicesTest.Entities" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IListSvc_TestSvc_InputMessage">
@@ -32,6 +32,12 @@
   <wsdl:message name="IListSvc_getJsonMsg_OutputMessage">
     <wsdl:part name="parameters" element="tns:getJsonMsgResponse" />
   </wsdl:message>
+  <wsdl:message name="IListSvc_GetTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicket" />
+  </wsdl:message>
+  <wsdl:message name="IListSvc_GetTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicketResponse" />
+  </wsdl:message>
   <wsdl:portType name="IListSvc">
     <wsdl:operation name="TestSvc">
       <wsdl:input wsaw:Action="http://tempuri.org/IListSvc/TestSvc" message="tns:IListSvc_TestSvc_InputMessage" />
@@ -48,6 +54,10 @@
     <wsdl:operation name="getJsonMsg">
       <wsdl:input wsaw:Action="http://tempuri.org/IListSvc/getJsonMsg" message="tns:IListSvc_getJsonMsg_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IListSvc/getJsonMsgResponse" message="tns:IListSvc_getJsonMsg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListSvc/GetTicket" message="tns:IListSvc_GetTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListSvc/GetTicketResponse" message="tns:IListSvc_GetTicket_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IListSvc" type="tns:IListSvc">
@@ -88,10 +98,19 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetTicket">
+      <soap:operation soapAction="http://tempuri.org/IListSvc/GetTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="ListSvc">
     <wsdl:port name="BasicHttpBinding_IListSvc" binding="tns:BasicHttpBinding_IListSvc">
-      <soap:address location="http://j:520/JProject.ServicesTest.ListSvc.svc" />
+      <soap:address location="http://slvcnnot041.cn.slv.int:520/JProject.ServicesTest.ListSvc.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace JProject.ServicesTest.Utilities
 {
     [DataContract]
+    [KnownType(typeof(NavigationEntity))]
     public class NavigationEntity
     {
         //private string 

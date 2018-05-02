@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8267a5ab-19e7-45bf-9f4f-770a16684542" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a219f66d-1628-44a4-a5fd-2843868d7c05" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="8d922e6e-c5e0-495c-a6bc-35585ca4662c" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="f8906666-6e7d-4f99-af4f-4d356de08a39" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="0cae8d85-d8bd-4ab7-bee7-1bc070a22d30" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="JProject.ServicesTest.Utilities1.xsd" MetadataType="Schema" ID="f638136b-246c-4781-a6b4-fa10e495a0b0" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="83ee3c52-c377-4e7e-864b-391b33e1d683" SourceId="1" SourceUrl="http://172.20.125.12:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="b98e3535-14cc-433d-ac6b-23120471eca0" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b70a05d2-c67c-4c25-be1c-b1653f34f15e" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="JProject.ServicesTest.Utilities.xsd" MetadataType="Schema" ID="6066024f-8fd7-4b5a-b2e6-632e604c45aa" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="JProject.ServicesTest.Entities.xsd" MetadataType="Schema" ID="cfa106bd-1ccc-4d5c-8a91-845854f2395f" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a403bb1c-b3e6-4ca4-a106-ea218e156a99" SourceId="1" SourceUrl="http://172.24.21.135:520/JProject.ServicesTest.ListSvc.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

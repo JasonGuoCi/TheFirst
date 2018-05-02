@@ -36,11 +36,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -51,7 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseServices.cs" />
+    <Compile Include="Entities\TicketEntity.cs" />
     <Compile Include="Helper\JsonHelper.cs" />
+    <Compile Include="Helper\SPHelper.cs" />
     <Compile Include="IListSvc.cs" />
     <Compile Include="ListSvc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +72,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLs\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLLs\Microsoft.CSharp.dll" />
+    <Content Include="DLLs\Microsoft.SharePoint.Client.dll" />
+    <Content Include="DLLs\Microsoft.SharePoint.Client.Runtime.dll" />
+    <Content Include="DLLs\NPOI.dll" />
+    <Content Include="DLLs\NPOI.OOXML.dll" />
+    <Content Include="DLLs\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLLs\NPOI.OpenXmlFormats.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

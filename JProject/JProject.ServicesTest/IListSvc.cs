@@ -1,4 +1,5 @@
 ﻿
+using JProject.ServicesTest.Entities;
 using JProject.ServicesTest.Utilities;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,8 @@ namespace JProject.ServicesTest
 {
     // 注意: 使用“重构”菜单上的“重命名”命令，可以同时更改代码和配置文件中的接口名“IListSvc”。
     [ServiceContract]
+    [ServiceKnownType(typeof(NavigationEntity))]
+    [ServiceKnownType(typeof(TicketEntity))]
     public interface IListSvc
     {
         //[OperationContract]
@@ -31,6 +34,10 @@ namespace JProject.ServicesTest
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
-        List<object> getJsonMsg();
+        List<NavigationEntity> getJsonMsg();
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        List<TicketEntity> GetTicket();
     }
 }
