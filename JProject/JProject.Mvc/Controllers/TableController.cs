@@ -41,6 +41,7 @@ namespace JProject.Mvc.Controllers
 
             var total = data.Count();
             var rows = data.Skip(offset).Take(limit).ToList();
+            var test = Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
             return Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
         }
 

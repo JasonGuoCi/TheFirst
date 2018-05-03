@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Services", "JProje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Demo", "JProject.Demo\JProject.Demo.csproj", "{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Web2", "JProject.Web2\JProject.Web2.csproj", "{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEF1B2E8-7ADC-4D4C-838E-5F6DA32A4A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
