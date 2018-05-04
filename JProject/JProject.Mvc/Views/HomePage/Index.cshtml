@@ -36,6 +36,11 @@
         </div>
     </div>
 
+    @*定义下面区域*@
+    <div data-options="region:'south',border:false" style="height:20px;">
+        <div class="define-bottom"></div>
+    </div>
+
     @*定义右侧面板tabs region：center*@
     <div data-options="region:'center',border:false">
         <div id="mainTab" class="easyui-tabs" data-options="fit:true">
@@ -45,5 +50,35 @@
         </div>
     </div>
 
+    @*定义tab菜单*@
+    <div id="tab_menu" class="easyui_menu" style="width:150px;">
+        <div id="tab_menu-tabrefresh" data-options="iconCls:'icon-reload'">
+            刷新
+        </div>
+        <div id="tab_menu-openFrame">
+            在新窗口打开
+        </div>
+        <div id="tab_menu-tabcloseall">
+            关闭所有
+        </div>
+        <div id="tab_menu-tabcloseother">
+            关闭其他标签页
+        </div>
+
+        @*tab分隔符*@
+        <div class="menu-sep">
+        </div>
+
+        <div id="tab_menu-tabcloseright">
+            关闭右边
+        </div>
+        <div id="tab_menu-tabcloseleft">
+            关闭左边
+        </div>
+        <div id="tab_menu-tabclose" data-options="iconCls:'icon-remove'">
+            关闭
+        </div>
+        <div id="menu" class="easyui_menu" style="width:150px;"></div>
+    </div>
 </body>
 </html>
