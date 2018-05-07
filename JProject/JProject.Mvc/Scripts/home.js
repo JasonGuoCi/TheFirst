@@ -81,4 +81,54 @@
         });
         return false;
     });
-})
+});
+
+$(function () {
+    //为tab选项卡绑定右键菜单
+    $(". tabs li").live('contextmenu', function (e) {
+        //选中当前触发事件的选项卡
+        var subTitle = $(this).text();
+        $("#mainTab").tabs('select', subTitle);
+
+        //显示快捷菜单
+        $('#tab_menu').menu('show', {
+            left: e.pageX,
+            top: e.pageY
+        });
+        return false;
+    });
+});
+//添加标签
+function addTab(subTitle, url, icon) {
+    if (!$("#mainTab").tabs('exists', subTitle)) {
+        $("#mainTab").tabs('add', {
+            title: subTitle,
+            context: createFrame(url),
+            closable: true,
+            icon: icon
+        });
+    } else {
+        $("#mainTab").tabs('select', subTitle);
+        $("#tab_menu-tabrefresh").trigger("click");
+    }
+    $(".layout-button-left").trigger("click");
+}
+
+function createFrame(url) {
+    var s = '<iframe frameborder="0" src="' + url + '" scrolling="auto" style="width:100%;height:99%"></iframe>';
+    return s;
+}
+
+//系统皮肤切换
+$(function () {
+    $(".ui-skin-nav .li-skinitem span").click(function () {
+        var theme = $(this).attr("rel");
+        $.messager.confirm('提示', '切换皮肤将重新加载!', function (r) {
+            if (r) {
+                $.post("../../Home/SetThemes", { value: theme }, function (data) {
+                    window.location.reload();
+                }, "json");
+            }
+        });
+    });
+});
