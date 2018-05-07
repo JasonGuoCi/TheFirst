@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>726402d5-39c1-4800-9a6c-97e970417a28</ProjectGuid>
+    <ProjectGuid>{726402D5-39C1-4800-9A6C-97E970417A28}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>JProject.Core</RootNamespace>
@@ -30,24 +30,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JProject.BLL\JProject.BLL.csproj">
+      <Project>{240177be-e315-416d-aa53-d416a85645bf}</Project>
+      <Name>JProject.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Common\JProject.Common.csproj">
+      <Project>{bf903f8a-aae5-420b-b953-ed9f9eab7771}</Project>
+      <Name>JProject.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.DAL\JProject.DAL.csproj">
+      <Project>{b40323a5-a89f-4e17-81ae-30569d83401c}</Project>
+      <Name>JProject.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.IBLL\JProject.IBLL.csproj">
+      <Project>{f3cd84d6-c606-452c-9eb3-ef087c74d282}</Project>
+      <Name>JProject.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.IDAL\JProject.IDAL.csproj">
+      <Project>{7db83e7f-78d3-4101-bbf6-af3c0828567e}</Project>
+      <Name>JProject.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

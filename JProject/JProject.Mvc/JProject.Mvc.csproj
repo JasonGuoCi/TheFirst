@@ -152,6 +152,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomePageController.cs" />
+    <Compile Include="Controllers\SysSampleController.cs" />
     <Compile Include="Controllers\TableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -867,6 +868,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\easyui\demo\" />
+    <Folder Include="Views\SysSample\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -888,6 +890,34 @@
     <WCFMetadataStorage Include="Connected Services\TableSvc\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JProject.BLL\JProject.BLL.csproj">
+      <Project>{240177be-e315-416d-aa53-d416a85645bf}</Project>
+      <Name>JProject.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Common\JProject.Common.csproj">
+      <Project>{bf903f8a-aae5-420b-b953-ed9f9eab7771}</Project>
+      <Name>JProject.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Core\JProject.Core.csproj">
+      <Project>{726402d5-39c1-4800-9a6c-97e970417a28}</Project>
+      <Name>JProject.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.DAL\JProject.DAL.csproj">
+      <Project>{b40323a5-a89f-4e17-81ae-30569d83401c}</Project>
+      <Name>JProject.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.IBLL\JProject.IBLL.csproj">
+      <Project>{f3cd84d6-c606-452c-9eb3-ef087c74d282}</Project>
+      <Name>JProject.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.IDAL\JProject.IDAL.csproj">
+      <Project>{7db83e7f-78d3-4101-bbf6-af3c0828567e}</Project>
+      <Name>JProject.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Locale\JProject.Locale.csproj">
+      <Project>{13e1ba69-0310-4ec3-83c9-f0650790e4fa}</Project>
+      <Name>JProject.Locale</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JProject.ServicesTest\JProject.ServicesTest.csproj">
       <Project>{C4902383-889A-4E58-94E9-C9A45B598A2F}</Project>
       <Name>JProject.ServicesTest</Name>

@@ -98,5 +98,15 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JProject.Common\JProject.Common.csproj">
+      <Project>{bf903f8a-aae5-420b-b953-ed9f9eab7771}</Project>
+      <Name>JProject.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Locale\JProject.Locale.csproj">
+      <Project>{13e1ba69-0310-4ec3-83c9-f0650790e4fa}</Project>
+      <Name>JProject.Locale</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
