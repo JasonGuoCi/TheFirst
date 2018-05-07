@@ -5,13 +5,14 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.easyui.min.js")" type="text/javascript"></script>
-    @*<script src="@Url.Content("~/Scripts/jquery.tree.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/Scripts/jquery.tree.js")"></script>
+    <script src="~/Scripts/home.js"></script>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/themes/blue/css")
-    @Scripts.Render("~/bundles/home")
-
+    @*@Scripts.Render("~/bundles/home")*@
+   
 </head>
 <body class="easyui-layout">
     <div id="OverTimeLogin" class="easyui-dialog" data-options="closed:true,modal:true">
@@ -19,7 +20,7 @@
     </div>
 
     @*定义ribbon region:north*@
-    <div data-options="region:'north',border:false,split:true" style="height:60px;">
+    <div data-options="region:'north',border:false,split:true" style="height:80px;">
         <div class="define-head">
             <div class="define-logo">
                 <div id="LoginTopLine">System Manage</div>
@@ -82,3 +83,21 @@
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    //$(function () {
+    //    /*为选项卡绑定右键*/
+    //    $(".tabs li").live('contextmenu', function (e) {
+    //        /*选中当前触发事件的选项卡 */
+    //        var subtitle = $(this).text();
+    //        $('#mainTab').tabs('select', subtitle);
+    //        //显示快捷菜单
+    //        $('#tab_menu').menu('show', {
+    //            left: e.pageX,
+    //            top: e.pageY
+    //        });
+    //        return false;
+    //    });
+    //});
+
+
+</script>

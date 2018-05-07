@@ -1,5 +1,5 @@
 ﻿$(function () {
-    $("tab_menu-tabrefresh").click(function () {
+    $("#tab_menu-tabrefresh").click(function () {
         /*重新设置该标签 */
         var url = $(".tabs-panels .panel").eq($(".tabs-selected").index()).find("iframe").attr("src");
         $(".tabs-panels .panel").eq($(".tabs-selected").index()).find("iframe").attr("src", url);
@@ -58,7 +58,7 @@
 
         nextall.each(function (i, n) {
             if ($("a.tabs-close", $(n), length > 0)) {
-                var t = $("a:eq(0) span",& (n)).text();
+                var t = $("a:eq(0) span", $(n)).text();
                 $("#mainTab").tabs("close", t);
             }
         });
@@ -75,7 +75,7 @@
 
         prevall.each(function (i, n) {
             if ($("a.tabs-close", $(n)).length > 0) {
-                var t = $("a:eq(0) span", $(n)).next();
+                var t = $("a:eq(0) span", $(n)).text();
                 $("#mainTab").tabs("close", t);
             }
         });
@@ -85,7 +85,7 @@
 
 $(function () {
     //为tab选项卡绑定右键菜单
-    $(". tabs li").live('contextmenu', function (e) {
+    $(".tabs li").live('contextmenu', function (e) {
         //选中当前触发事件的选项卡
         var subTitle = $(this).text();
         $("#mainTab").tabs('select', subTitle);
@@ -95,9 +95,12 @@ $(function () {
             left: e.pageX,
             top: e.pageY
         });
+
         return false;
     });
 });
+
+
 //添加标签
 function addTab(subTitle, url, icon) {
     if (!$("#mainTab").tabs('exists', subTitle)) {
