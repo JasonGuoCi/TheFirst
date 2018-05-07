@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Demo", "JProject.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Web2", "JProject.Web2\JProject.Web2.csproj", "{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JProject.Base", "JProject.Base", "{1C82273A-71CB-48FF-97F1-5DD525547E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.BLL", "JProject.BLL\JProject.BLL.csproj", "{92E39ED6-A78A-48DB-A865-B32FDC81B984}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +49,16 @@ Global
 		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38101006-CF0B-4F3C-AE8F-4FA54E987CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E39ED6-A78A-48DB-A865-B32FDC81B984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E39ED6-A78A-48DB-A865-B32FDC81B984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E39ED6-A78A-48DB-A865-B32FDC81B984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E39ED6-A78A-48DB-A865-B32FDC81B984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92E39ED6-A78A-48DB-A865-B32FDC81B984} = {1C82273A-71CB-48FF-97F1-5DD525547E71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C2C36D6-A385-4DB6-B033-D9D501829F76}

@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/themes/blue/css")
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title>系统登陆</title>
+
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div>
+        <div class="define-head" style="height:67px;">
+            <div class="define-logo">
+                <div id="LoginTopLine">System Manage</div>
+                <div id="LoginBotoomLine">Jason's Project MVC+EF+EasyUI</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin:0 auto;margin-top:100px;width:800px;">
+        <table style="width:800px;margin:0 auto;">
+            <tr>
+                <td>
+                    <img src="~/Content/Images/account.jpg" />
+                </td>
+                <td style="width:310px;">
+                    <table id="LoginTb" style="margin-top:10px;background:#fff;width:100%;height:230px;border:1px #ccc solid;">
+                        <tr>
+                            <td colspan="2" style="font-size:18px;font-weight:bold;padding:5px 20px;">
+                                欢迎登陆
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:80px; text-align:right;">
+                                用户名:
+                            </td>
+                            <td>
+                                <input type="text" id="UserName" name="UserName" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:80px; text-align:right;">
+                                密码：
+                            </td>
+                            <td>
+                                <input type="password" id="Password" name="password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:80px; text-align:right;">
+                                验证码：
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="text" name="ValidateCode" id="ValidateCode" />
+                                <img id="codeImg" alt="刷新验证码！" style="margin-bottom:-8px; cursor:pointer;" src="/Core/verify_code.ashx" onclick="this.src = this.src+'?'" />
+                                <a href="javascript:$('#codeImg').trigger('click')">看不清？</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td style="width:40px;">&nbsp;</td>
+                                        <td>
+                                            <div id="mes" class="field-validation-error"></div>
+                                            <div id="Loading" style="display:none;" class="panel-loading">
+                                                <font color="#000">加载中...</font>
+                                            </div>
+                                        </td>
+                                        <td style="width:100px;">
+                                            <a id="LoginSys" href="javascript:void(0)" class="easyui-linkbutton l-btn">
+                                                <span class="l-btn-left">
+                                                    <span class="l-btn-text icon-ok" style="padding-left:20px;">登陆</span>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background:#f1f1f1;height:40px;width:100%; text-align:center;line-height:40px;border-top:1px #ccc solid;bottom:0;position:absolute">
+        Copyright@Jason 2018
+    </div>
+</body>
+</html>
