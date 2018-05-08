@@ -863,12 +863,12 @@
     <Content Include="Views\HomePage\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\SysSample\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\easyui\demo\" />
-    <Folder Include="Views\SysSample\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -917,6 +917,10 @@
     <ProjectReference Include="..\JProject.Locale\JProject.Locale.csproj">
       <Project>{13e1ba69-0310-4ec3-83c9-f0650790e4fa}</Project>
       <Name>JProject.Locale</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JProject.Models\JProject.Models.csproj">
+      <Project>{f9521c5d-9d83-4dc5-95e0-a330352d9e86}</Project>
+      <Name>JProject.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\JProject.ServicesTest\JProject.ServicesTest.csproj">
       <Project>{C4902383-889A-4E58-94E9-C9A45B598A2F}</Project>

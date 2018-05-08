@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JProject.BLL;
+using JProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,9 @@ namespace JProject.Mvc.Controllers
         // GET: SysSample
         public ActionResult Index()
         {
-            return View();
+            SysSampleBLL bll = new SysSampleBLL();
+            List<SysSample> list = bll.GetList("");
+            return View(list);
         }
     }
 }
