@@ -1,4 +1,4 @@
-﻿using JProject.Mvc.TableSvc;
+﻿
 using JProject.ServicesTest.Entities;
 using JProject.ServicesTest.Utilities;
 using System;
@@ -17,6 +17,7 @@ namespace JProject.Mvc.Controllers
         {
             return View();
         }
+        /*
         public ActionResult GetData(int limit, int offset)
         {
             //var data = new List<object>(){new { ID=1, Name="Arbet", Sex="男"},
@@ -44,7 +45,8 @@ namespace JProject.Mvc.Controllers
             var test = Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
             return Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
         }
-
+        */
+        /*
         public ActionResult GetSPTicketItem(int limit, int offset)
         {
             ListSvcClient svc = new ListSvcClient();
@@ -55,6 +57,6 @@ namespace JProject.Mvc.Controllers
             return Json(new { total = total, rows = rows }, JsonRequestBehavior.AllowGet);
 
 
-        }
+        }*/
     }
 }

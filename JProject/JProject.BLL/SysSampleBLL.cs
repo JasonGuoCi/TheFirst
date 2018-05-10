@@ -203,10 +203,10 @@ namespace JProject.BLL
         public List<SysSample> GetList(string queryStr)
         {
             IQueryable<SysSample> queryData = Rep.GetList(db);
-            if (!string.IsNullOrWhiteSpace(queryStr))
-            {
-                queryData = queryData.Where(a => a.Id.Contains(queryStr) || a.Name.Contains(queryStr) || a.Note.Contains(queryStr));
-            }
+            //if (!string.IsNullOrWhiteSpace(queryStr))
+            //{
+            //    queryData = queryData.Where(a => a.Id.Contains(queryStr) || a.Name.Contains(queryStr) || a.Note.Contains(queryStr));
+            //}
 
             return queryData.ToList();
         }
