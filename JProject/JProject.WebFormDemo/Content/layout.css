@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #fff !important;
+}
+.page-header-menu {
+    display: block;
+    /*height:51px;*/
+    clear: both;
+}
+
+    .page-header-menu .hor-menu {
+        margin: 0 0 0 -17px;
+        margin: 0;
+        float: left;
+    }
+
+        .page-header-menu .hor-menu .navbar-nav {
+            position: static;
+        }
+
+            .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu {
+                margin-top: 0;
+                border: none
+            }
+
+                .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a {
+                    font-family: "Open Sans",sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding: 10px 12px;
+                    white-space: normal;
+                }
+                    .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a .badge {
+                        font-weight: 300;
+                    }
+            .page-header-menu .hor-menu .navbar-nav > li.classic-menu-dropdown .dropdown-menu {
+                min-width: 195px;
+                max-width: 235px;
+            }
