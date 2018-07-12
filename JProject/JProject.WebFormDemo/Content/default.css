@@ -39,7 +39,7 @@
         .page-header .page-header-menu .hor-menu .navbar-nav > li.active > a:hover > i {
             color: #BCC2CB;
         }
-
+    /*classic menu start*/
     .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu {
         box-shadow: 5px 5px rgba(85, 97, 111, 0.2);
         background: #55616f;
@@ -72,3 +72,8 @@
             .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li.active > a:hover > i {
                 color: #6fa7d7;
             }
+    /*classic menu end*/
+
+/*mega menu start*/
+   
+/*mega menu end*/
