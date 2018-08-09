@@ -1,0 +1,135 @@
+<script type="text/javascript" src="../../SiteAssets/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../SiteAssets/jquery.SPServices-2014.02.min.js"></script>
+<script type="text/javascript">
+var listName="采购降本项目跟踪";
+$(function(){
+	//var myDate = new Date;
+	getLastItemTitleAndSetValue();    
+	
+	//get current user
+	var PickerTitle = "采购负责人";
+	var PickerDiv = $('[id$="ClientPeoplePicker"][title="' + PickerTitle + '"]');
+	var PickerEditor = PickerDiv.find('[title="' + PickerTitle + '"]');
+	var PickerInstance = SPClientPeoplePicker.SPClientPeoplePickerDict[PickerDiv[0].id];
+	
+	//var currUser = $().SPServices.SPGetCurrentUser({ fieldName: "Title" });//get current user
+	var currUser = $().SPServices.SPGetCurrentUser({fieldName: "Name"});  
+	PickerEditor.val(currUser);
+	PickerInstance.AddUnresolvedUserFromEditor(true);
+	
+});
+
+function getLastItemTitleAndSetValue() {
+        var newItemTitle;
+        //var userId = _spPageContextInfo.userId;
+        var caml = "<View><Query>"
+        + "<OrderBy><FieldRef Name='Created' Ascending='False' /></OrderBy>"
+        + "</Query><RowLimit>1</RowLimit></View>";
+        var ctx = SP.ClientContext.get_current()
+        var web = ctx.get_web()
+        var list = web.get_lists().getByTitle(listName)
+        var query = new SP.CamlQuery();
+        query.set_viewXml(caml);
+        var items = list.getItems(query);
+        ctx.load(items)
+        ctx.executeQueryAsync(function () {
+            // success actions
+            var count = items.get_count();
+            //should only be 1
+            if (count > 1) {
+                throw "Something is wrong. Should only be one latest list item / doc";
+            }
+            if (count < 1) {
+				alert("Page load error, please reload the page,thanks!");
+            }
+            else {
+                var enumerator = items.getEnumerator();
+                enumerator.moveNext();
+                var item = enumerator.get_current();
+                var id = item.get_id();
+                lastItemTitle = item.get_item('Title')
+                lastItemTitle = lastItemTitle.substr(lastItemTitle.length - 4)
+                newItemTitle = parseInt(lastItemTitle) + 1;
+                newItemTitle = newItemTitle.toString();
+                switch (newItemTitle.length) {
+                    case 1:
+                        newItemTitle = "000" + newItemTitle;
+                        break;
+                    case 2:
+                        newItemTitle = "00" + newItemTitle;
+                        break;
+                    case 3:
+                        newItemTitle = "0" + newItemTitle;
+                        break;
+                    case 4:
+                        newItemTitle = newItemTitle;
+                        break;
+                    default:
+                        break;
+                }
+
+                var dt = new Date();
+                var year = dt.getFullYear();
+                var titleField=$("input[id^='Title']");
+                
+                titleField.attr("disabled","disabled");//set disable
+                
+    			titleField.val("SC"+year.toString() + newItemTitle);//set value
+                console.log(newItemTitle);
+            }
+
+
+
+        }, function () {
+  	        alert("Page load error, please reload the page,thanks!");
+            console.log("get last item title failed or item count is 0");
+
+        });
+}
+
+//display validation message start
+var oList, clientContext;  
+  
+function SetValidation()  
+{  
+    //Get client context ,web and list object  
+    clientContext = new SP.ClientContext.get_current();  
+    varoWeb = clientContext.get_web();  
+    oList = oWeb.get_lists()  
+        .getByTitle(listName);  
+    //Load the client context and execute the batch  
+    clientContext.load(oList);  
+    clientContext.executeQueryAsync(Success, Failure);  
+}  
+  
+function Success()  
+{  
+    //Set validation formula  
+    //oList.set_validationFormula("[StartDate] < TODAY()");  
+    oList.set_validationMessage('切入数量1.X平台，切入数量2.X平台，切入数量3.X平台，切入数量4.X平台的和需大于0，请重新输入，谢谢！');  
+    oList.update();  
+    //Load the client context and execute the batch  
+    clientContext.load(oList);  
+    clientContext.executeQueryAsync(OnSuccess, OnFailure);  
+}  
+  
+function Failure(sender, args)  
+{  
+    console.log('Request failed. ' + args.get_message() + '\n'  
+        args.get_stackTrace());  
+}  
+  
+function OnSuccess()  
+{  
+    console.log("List validation formula has been set for this list");  
+}  
+  
+function OnFailure(sender, args)  
+{  
+    console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());  
+}
+
+//display validation message end
+
+
+</script>
