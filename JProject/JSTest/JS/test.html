@@ -7,15 +7,25 @@
     <script type="text/javascript" src="../JS/jquery-1.10.2.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            var x = 10;
+            var y = 10;
             $("a.tooltip").mouseover(function (e) {
-                var newDiv = "<div id='tooltip'>" + this.title + "</div>";
+                this.myTitle = this.title;
+                this.title = "";
+                var newDiv = "<div id='tooltip'>" + this.myTitle + "</div>";
                 $("body").append(newDiv);
                 $("#tooltip").css({
-                    "top": e.pageY + "px",
-                    "left": e.pageX + "px"
+                    "top": (e.pageY + y) + "px",
+                    "left": (e.pageX + x) + "px"
                 }).show("fast");
             }).mouseout(function () {
                 $("#tooltip").remove();
+                this.title = this.myTitle;
+            }).mousemove(function (e) {
+                $("#tooltip").css({
+                    "top": (e.pageY + y) + "px",
+                    "left": (e.pageX + x) + "px"
+                });
             });
         });
     </script>
