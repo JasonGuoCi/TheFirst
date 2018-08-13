@@ -14,6 +14,7 @@
                 this.title = "";
                 var newDiv = "<div id='tooltip'>" + this.myTitle + "</div>";
                 $("body").append(newDiv);
+                //alert(e.pageX + "......" + e.pageY);
                 $("#tooltip").css({
                     "top": (e.pageY + y) + "px",
                     "left": (e.pageX + x) + "px"
