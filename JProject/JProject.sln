@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.Models", "JProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.WebFormDemo", "JProject.WebFormDemo\JProject.WebFormDemo.csproj", "{9764D7D8-FCCF-4175-B9B9-A913A2E76D31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JProject.MVCBootstraps", "JProject.MVCBootstraps\JProject.MVCBootstraps.csproj", "{F4B4A673-4CD7-41FC-A7DC-8F8098265887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{9764D7D8-FCCF-4175-B9B9-A913A2E76D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9764D7D8-FCCF-4175-B9B9-A913A2E76D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9764D7D8-FCCF-4175-B9B9-A913A2E76D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B4A673-4CD7-41FC-A7DC-8F8098265887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B4A673-4CD7-41FC-A7DC-8F8098265887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B4A673-4CD7-41FC-A7DC-8F8098265887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B4A673-4CD7-41FC-A7DC-8F8098265887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
